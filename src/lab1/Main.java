@@ -1,5 +1,8 @@
 package lab1;
 
+import lab2.Calculator;
+import lab2.Planet;
+
 import java.util.Scanner;
 
 public class Main {
