@@ -37,17 +37,24 @@ public class PartTwo {
         return ints;
     }
 
-//    public static int methodSortFour(int[] ints) {
-//        for (int i = 0; i < ints.length; i++) {
-//            for (int j = 0; j < ints.length; j++) {
-//                if (ints[i] == ints[j] && i != j)
-//                    break;
-//                else return ints[i];
-//            }
-//
-//        }
+    public static String methodSortFour(int[] ints) {
+        String uniqueValue = "there is not unique value in array";
+        for (int i = 0; i < ints.length; i++) {
+            for (int j = 0; j < ints.length; j++) {
+                if (ints[i] == ints[j] && i != j)
+                    break;
+                else if (j == ints.length - 1)
+                    uniqueValue = Integer.toString(ints[i]);
+
+            }
+
+
+        }
+        return uniqueValue;
+
+    }
 
 
 }
 
-}
+
