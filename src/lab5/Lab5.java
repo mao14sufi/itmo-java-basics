@@ -32,9 +32,9 @@ public class Lab5 {
         return true;
     }
 
-    public static String replaceWord(String text) {
+    public static String replaceWord(String text, String word, String replacement) {
 
-        return text.replaceAll("\\bбяка\\b", "[вырезано цензурой]");
+        return text.replaceAll("\\b" + word + "\\b", replacement);
     }
 
     public static int substringToString(String string, String substring) {
